@@ -1,0 +1,11 @@
+criar diagrama primeiro
+---------------------------------------
+modelo 
+de conta corrente (três atributos)
+de conta poupanca (três atributos)
+---------------------------------------
+2 metodos pelo menos
+ex: sacar , depositar
+
+
+
