@@ -2,7 +2,7 @@ package ordenacao;
 
 import java.util.Random;
 
-public class Selection {
+public class SelectionSort {
 
     private static final int TAM = 8;
     public static void main(String[] args) {
