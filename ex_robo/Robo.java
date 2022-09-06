@@ -1,11 +1,11 @@
 package ex_robo;
 
 
-public class Robo1 {
+public class Robo {
  //   ponto position;
     char direction;
 
-    public Robo1(double _x, double _y){
+    public Robo(double _x, double _y){
   //      this.position = new Ponto(_x, _y);
 
     }
