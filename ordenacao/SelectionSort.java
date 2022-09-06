@@ -5,6 +5,7 @@ import java.util.Random;
 public class SelectionSort {
 
     private static final int TAM = 8;
+    
     public static void main(String[] args) {
 
         int vetor[] = new int [TAM];
