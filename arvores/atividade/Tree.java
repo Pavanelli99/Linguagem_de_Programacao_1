@@ -125,6 +125,34 @@ public class Tree {
         System.out.println(node.info);
     }
 
+    public void remover(Node node, Node previousNode, int info) {
+        if(node.info == info){
+            if(node.esq != null){
+                node.esq.dir = node.dir;
+                previousNode.dir = node.esq;
+            }else{
+                if(node.dir != null){
+                    previousNode = node.esq;
+
+                    previousNode.dir = node.dir;
+                    previousNode.esq = null;
+                }
+
+            }
+        }else{
+            if(node.esq != null){
+                remover(node.esq, node, info);
+            }else{
+                if(node.dir != null){
+                    remover(node.dir, node, info);
+            }else{
+                System.out.println("Nó não encontrado");
+            }
+        }
+    }
+}
+
+
     public void print(String prefix, Node n, boolean isLeft) {
         if (n != null) {
             print(prefix + "     ", n.dir, false);
@@ -135,7 +163,7 @@ public class Tree {
 
     @Override
     public String toString() {
-        // this.in_ordem(root); // creditos by leticia novamente!!!
+        // this.in_ordem(root);
         this.print("", this.root, false);
         return "";
     }

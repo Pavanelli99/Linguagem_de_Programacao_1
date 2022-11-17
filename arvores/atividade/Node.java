@@ -6,6 +6,7 @@ public class Node {
     int info;
     Node esq;
     Node dir;
+    int Valor;
 
     public Node(int info){
         this.info = info;
@@ -13,4 +14,7 @@ public class Node {
         this.dir = null;
 
     }
+
+    
+    
 }
